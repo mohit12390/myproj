@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2><%= "This is my context !!" %></h2>
+<h2><%= "Whatsup Dude!!" %></h2>
 </body>
 </html>
