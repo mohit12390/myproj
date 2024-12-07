@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2><%= "Whatsup Dude!!" %></h2>
+<h2><%= "testing!" %></h2>
 </body>
 </html>
