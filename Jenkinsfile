@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn installasfd'
+                sh 'mvn install'
             }
         }
         stage('Deploy on Tomcat (Test)') {
