@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn install'
+                sh 'mvn installsdf'
             }
         }
         stage('Deploy on Tomcat (Test)') {
@@ -26,9 +26,9 @@ pipeline {
             }
         }
     }
-    post {
-        always{
-            cleanWs()
-        }
-    }
+    // post {
+    //     always{
+    //         cleanWs()
+    //     }
+    // }
 }
