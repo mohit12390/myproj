@@ -3,6 +3,10 @@ pipeline {
     //     label "master-slave"
     // } 
     agent any
+    tools {
+      maven 'Maven'
+    }
+
     stages {
         stage('Test') {
             steps {
