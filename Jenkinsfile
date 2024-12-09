@@ -24,6 +24,15 @@ pipeline {
                 deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://localhost:8085')], contextPath: '/app', war: '**/*.war'
             }
         }
+        stage('Manual Validation for prod deployment') {
+            input {
+                message "Are you sure you want to go ahead"
+                ok "Yes I am "
+            }
+            steps {
+                echo 'Deploy on Prod'
+            }
+        }
         stage('Deploy on prod') {
             steps {
                 echo 'Deploy on Prod'
